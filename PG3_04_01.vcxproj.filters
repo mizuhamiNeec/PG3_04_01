@@ -26,12 +26,10 @@
     <ClCompile Include="ClearScene.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
-    <ClCompile Include="IScene.cpp">
-      <Filter>KamataEngine</Filter>
-    </ClCompile>
     <ClCompile Include="Vec2.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
+    <ClCompile Include="IScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
