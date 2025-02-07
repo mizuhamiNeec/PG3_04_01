@@ -2,7 +2,7 @@
 
 #include "GameManager.h"
 
-constexpr char kWindowTitle[] = "PG3_04_01_ステートパターン";
+constexpr char kWindowTitle[] = "PG3_06_03_std::thread その2";
 
 constexpr int kWindowWidth = 1280;
 constexpr int kWindowHeight = 720;
