@@ -14,6 +14,12 @@
     <Filter Include="KamataEngine\Adapter">
       <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="commands">
+      <UniqueIdentifier>{80da89b8-7320-4d37-a13f-a23fd64b4bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commands\stageScene">
+      <UniqueIdentifier>{936427ec-6e9b-4df8-8523-e1231797cfae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -22,14 +28,12 @@
     </ClCompile>
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="TitleScene.cpp" />
-    <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="ClearScene.cpp">
-      <Filter>KamataEngine</Filter>
-    </ClCompile>
-    <ClCompile Include="Vec2.cpp">
-      <Filter>KamataEngine</Filter>
-    </ClCompile>
     <ClCompile Include="IScene.cpp" />
+    <ClCompile Include="ClearScene.cpp" />
+    <ClCompile Include="Vec2.cpp" />
+    <ClCompile Include="StageScene.cpp">
+      <Filter>commands\stageScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
@@ -116,9 +120,26 @@
     <ClInclude Include="IScene.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="TitleScene.h" />
-    <ClInclude Include="GameScene.h" />
     <ClInclude Include="ClearScene.h" />
     <ClInclude Include="Vec2.h" />
+    <ClInclude Include="IStageSceneCommand.h">
+      <Filter>commands\stageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectorCommand.h">
+      <Filter>commands\stageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>commands\stageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>commands\stageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>commands\stageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="StageSceneInputHandler.h">
+      <Filter>commands\stageScene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />

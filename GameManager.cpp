@@ -3,14 +3,14 @@
 #include <vector>
 
 #include "ClearScene.h"
-#include "GameScene.h"
+#include "StageScene.h"
 #include "Novice.h"
 #include "TitleScene.h"
 
 GameManager::GameManager() {
 	sceneArr_.resize(SCENE_ID_MAX);
 	sceneArr_[SCENE_ID_TITLE] = std::make_unique<TitleScene>();
-	sceneArr_[SCENE_ID_GAME] = std::make_unique<GameScene>();
+	sceneArr_[SCENE_ID_GAME] = std::make_unique<StageScene>();
 	sceneArr_[SCENE_ID_CLEAR] = std::make_unique<ClearScene>();
 
 	currentSceneNo_ = SCENE_ID_TITLE;
