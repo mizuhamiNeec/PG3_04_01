@@ -31,7 +31,8 @@ void GameScene::Draw() {
 					tileSize, tileSize,
 					0.0f,
 					0xFFFFFFFF,
-					FillMode::kFillModeSolid);
+					kFillModeSolid
+				);
 			}
 		}
 	}
@@ -59,7 +60,6 @@ void GameScene::LoadCSV() {
 			try {
 				row.push_back(std::stoi(token));
 			} catch (...) {
-				// 変換エラー時は 0 とするなどの処理も検討
 				row.push_back(0);
 			}
 		}
@@ -68,7 +68,7 @@ void GameScene::LoadCSV() {
 	file.close();
 
 	{
-		std::lock_guard<std::mutex> lock(mapDataMutex_);
+		std::lock_guard lock(mapDataMutex_);
 		mapData_ = data;
 		csvLoaded_ = true;
 	}
